@@ -1,0 +1,167 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+:root {
+  --banner-height: 250px;
+  --bg-color: #000000;
+  --border-color: #ffffff1c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color);
+  color: #c6cdd2;
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+}
+
+b {
+  color: rgb(12, 255, 105);
+}
+
+h2 {
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+h3 {
+  color: #fcfdfd;
+  margin-bottom: 16px;
+}
+
+h4 {
+  margin-bottom: 16px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+hr {
+  border-color: #aab3b91a;
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #c6cdd2;
+  padding: 12px;
+  transition: 0.1s ease-in-out;
+}
+
+a:hover {
+  background-color: #72727228;
+  color: rgb(12, 255, 105);
+  border-radius: 4px;
+  transform: scale(1.05);
+}
+
+.banner {
+  width: 100%;
+  height: var(--banner-height);
+}
+
+.container {
+  width: 100%;
+  max-width: 1056px;
+  height: max-content;
+  padding: 16px;
+  background-color: #0e0e0e;
+}
+
+.banner_img {
+  width: 100%;
+  height: 100%;
+  object-position: 50% 1px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  mask-image: linear-gradient(var(--bg-color) 0%, transparent);
+  filter: opacity(0.7) grayscale(1);
+}
+
+.card {
+  padding: 32px;
+  background-color: #1c1c1c;
+  border: 1px solid var(--border-color);
+}
+
+.nav {
+  position: sticky;
+  top: 10px;
+  display: none;
+  height: max-content;
+  box-shadow: inset 0px 5px 0px 0px #727272;
+  margin-bottom: 16px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.flex span {
+  font-size: 14px;
+}
+
+.nav ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  text-wrap: nowrap;
+  list-style: none;
+}
+
+.img-TCPIP {
+  border: 8px solid red;
+  filter: grayscale();
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 6px;
+}
+
+.img_internet {
+  width: 100%;
+  max-width: 200px;
+  filter: drop-shadow(10px 10px 10px #000);
+}
+
+.verde {
+  color: rgb(12, 255, 105);
+}
+
+ul,
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding-left: 48px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.autor {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav {
+    display: block;
+  }
+
+  .autor {
+    display: block;
+  }
+}
